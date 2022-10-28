@@ -1,0 +1,115 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root
+{
+    --black: #333;
+    --black2: #333;
+    --white: #fff;
+    --white2: #fff;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+}
+
+.navegacao{
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    border-right: 1px solid rgba(0, 0, 0, 0.05);
+    background: var(--white2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.navegacao ul{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 40px;
+}
+
+.navegacao ul li{
+    position: relative;
+    width: 100%;
+    list-style: none;
+}
+
+.navegacao ul li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    white-space: normal;
+    display: flex;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--black);
+    font-weight: 500 ;
+    letter-spacing: 2px;
+    opacity: 0.5;
+}
+
+.navegacao ul li a:hover{
+    opacity: 1;
+}
+
+.principal{
+    position: absolute;    
+    width: calc(100% - 300px);
+    left: 300px;
+    min-height: 100vh;
+    background: var(--white);
+}
+
+.principal .barraTopo {
+    position: fixed;
+    top: 0;
+    width: calc(100% - 300px) ;
+    left: 300px;
+    background: var(--white2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    height: 60px;
+    padding: 0 40px;
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    z-index: 100000;
+}
+
+.principal .barraTopo .logo{
+    color: var(--black);
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.principal .barraTopo .alternar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--black);
+}
+
