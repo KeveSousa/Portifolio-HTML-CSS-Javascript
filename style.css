@@ -23,7 +23,7 @@ body{
     width: 100%;
 }
 
-.navegacao{
+.navigation{
     position: fixed;
     width: 300px;
     height: 100%;
@@ -33,9 +33,14 @@ body{
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    transition: width 0.5s;
 }
 
-.navegacao ul{
+.navigation.active{
+    width: 0;
+}
+
+.navigation ul{
     position: relative;
     top: 0;
     left: 0;
@@ -43,13 +48,13 @@ body{
     padding: 20px 40px;
 }
 
-.navegacao ul li{
+.navigation ul li{
     position: relative;
     width: 100%;
     list-style: none;
 }
 
-.navegacao ul li a{
+.navigation ul li a{
     position: relative;
     display: block;
     width: 100%;
@@ -64,19 +69,25 @@ body{
     opacity: 0.5;
 }
 
-.navegacao ul li a:hover{
+.navigation ul li a:hover{
     opacity: 1;
 }
 
-.principal{
+.main{
     position: absolute;    
     width: calc(100% - 300px);
     left: 300px;
     min-height: 100vh;
     background: var(--white);
+    transition: width 0.5s, left 0.5s;
 }
 
-.principal .barraTopo {
+.main.active{
+    width: calc(100% - 0px) ;
+    left: 0px; 
+}
+
+.main .topbar {
     position: fixed;
     top: 0;
     width: calc(100% - 300px) ;
@@ -89,9 +100,15 @@ body{
     justify-content:space-between ;
     align-items: center;
     z-index: 100000;
+    transition: width 0.5s, left 0.5s;
 }
 
-.principal .barraTopo .logo{
+.main .topbar.active{
+    width: calc(100% - 0px) ;
+    left: 0px;  
+}
+
+.main .topbar .logo{
     color: var(--black);
     font-weight: 700;
     text-decoration: none;
@@ -100,7 +117,7 @@ body{
     letter-spacing: 1px;
 }
 
-.principal .barraTopo .alternar{
+.main .topbar .toggle{
     display: flex;
     align-items: center;
     position: relative;
@@ -113,3 +130,63 @@ body{
     color: var(--black);
 }
 
+section{
+    position: relative;
+    min-height: 100vh;
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.banner .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner .imgBx{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.banner .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h3{
+position: relative;
+font-size: 1.4em;
+color: var(--black);
+letter-spacing: 2px;
+text-transform: uppercase;
+}
+
+p{
+   color: #777; 
+}
+
+.btn{
+    position: relative;
+    display: inline-block;
+    padding: 10px 30px;
+    background: var(--black2);
+    color: #fff;
+    font-weight: 400px;
+    letter-spacing: 1px;
+    margin-top:  10px;
+    text-decoration: none;
+}
