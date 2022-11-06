@@ -403,6 +403,11 @@ p{
     transition: 0.5s ease-in-out;
 }
 
+.project .content .workBx .textBx a{
+    text-decoration: none;
+    color: var(--white);
+}
+
 .dark .project .content .workBx .textBx{
     background: #444;
 }
