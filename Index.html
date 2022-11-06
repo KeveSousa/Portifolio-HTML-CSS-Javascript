@@ -4,32 +4,189 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifolio Responsivo Keve Sousa</title>
+    <title>Portfolio Responsivo Keve Sousa</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!--cabecalho lateral-->
     <div class="container">
-        <div class="navegacao">
+        <div class="navigation">
             <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Sobre</a></li>
-            <li><a href="">Serviços</a></li>
-            <li><a href="">Projetos</a></li>
-            <li><a href="">Home</a></li>
-            <li><a href="">Contato</a></li>
+            <li><a href="#banner" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu();">Sobre</a></li>
+            <li><a href="#services" onclick="toggleMenu();">Experiencias</a></li>
+            <li><a href="#project" onclick="toggleMenu();">Projetos</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">Contato</a></li>
             </ul>
+            <div class="themeSwitch"></div>
         </div>
-        <div class="principal">
-            <div class="barraTopo">
-                <a href="" class="logo">Portifolio</a>
-                <div class="alternar">
-                    <i class="fa fa-bars" aria-hidden="true"></i>
 
+        <!--corpo principal-->
+        <div class="main">
+            <div class="topbar">
+                <a href="" class="logo">Portfolio</a>
+                <div class="toggle">
+                    <i class="fa fa-bars"   aria-hidden="true"></i>
                 </div>
+            </div>
+
+            <section class="banner" id="banner" >
+                <div class="content">
+                    <div class="imgBx" >
+                        <img src="keve.jpg" alt="">
+                    </div>
+                    <h3>Keve Sousa</h3>
+                    <p>Eu sou um Front-end Developer criativo e responsavel.</p>
+                    <a href="CV/index.html" class="btn">Baixe meu currículo.</a>
+                    <ul class="socialMedia">
+                        <li> <a href="https://www.instagram.com/k_k_g_s_pt/"><i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a></li>
+                        <li> <a href="https://www.linkedin.com/in/keve-kesley-07151216b/"><i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </a></li>
+                        <li> <a href="https://github.com/KeveSousa"><i class="fa fa-github" aria-hidden="true"></i>
+
+                        </a></li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <!-- Sobre -->
+
+            <section class="about adjust" id="about">
+                <div class="title">
+                    <h2>Sobre min</h2>
+                </div>
+                <div class="content">
+                    <div class="textBox">
+                        <p>Sou formado em Nutrição, com uma especialização em Nutrição Aplicada ao Exercício Físico e Desporto, Se eu precisasse escolher um ponto alto da minha carreira, diria que foi quando consegui uma vaga para trabalhar e aprender mais com Front-end, fazendo Landing pages para angariar clientes e encaminhar para vendas, assim descobrindo o que eu realmente gosto de fazer!<br><br>
+                          Sou autodidacta, e procuro desenvolver e criar novas capacidades na área de Front-end.<br><br>
+                        No meu tempo livre gosto de pescar e editar vídeos, também faço alguns trabalhos com edição de vídeos para canais do YouTube brasileiros, sobre pescas e afins, alem de estudar mais sobre javascript para poder me aperfeiçoar cada vez mais.
+                        </p>
+                    </div>
+                    <div class="imgBx">
+                        <img src="fotoK.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <!--Experiencias, serviços ou trabalho-->
+            <section class="services adjust" id="services">
+                <div class="title">
+                    <h2>Experiencias</h2>
+                    <p>Alguns dos trabalhos que ja tive</p>
+                </div>
+                <div class="content">
+                    <div class="serviceBox">
+                        <img src="icon1.png" alt="">
+                        <h2>Wordpress developer</h2>
+                        <p>Desenvolvia Landing pages no Wordpress e editava videos para o recrutamento do exercito.</p>
+                    </div>
+                    <div class="serviceBox">
+                        <img src="icon2.png" alt="">
+                        <h2>Front-end</h2>
+                        <p>Ajudei com a parde de UI e UX do site alem de criar diversas Landing pages para promoções e divulgações para a loja <a href="https://www.trincheiramilitar.com/index.php"><strong>Trincheira Militar</strong> </a> onde comecei por ter gosto em aprender sobre desenvolvimento web ligado as ferramentas de <strong>CSS HTML e Javascript</strong>.</p>
+                    </div>
+                    <div class="serviceBox">
+                        <img src="icon6.png" alt="">
+                        <h2>Editor de video</h2>
+                        <p>Edito videos para canais do youtube com o conteudo de pesca.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!--Projetos e GitHub-->
+            <section class="project adjust" id="project">
+                <div class="title">
+                    <h2>Projetos</h2>
+                    <p>Projetos no qual eu trabalhei e trabalho recentemente</p>
+                </div>
+                <div class="content">
+                    <div class="workBx">
+                        <div class="imgBx">
+                            <img src="img1.jpg" alt="">
+                        </div>
+                        <div class="textBx">
+                            <h3>Projeto 01</h3>
+                        </div>
+                    </div>
+                    <div class="workBx">
+                        <div class="imgBx">
+                            <img src="img2.jpg" alt="">
+                        </div>
+                        <div class="textBx">
+                            <h3>Projeto 02</h3>
+                        </div>
+                    </div>
+                    <div class="workBx">
+                        <div class="imgBx">
+                            <img src="img3.jpg" alt="">
+                        </div>
+                        <div class="textBx">
+                            <h3>Projeto 03</h3>
+                        </div>
+                    </div>
+                    <div class="workBx">
+                        <div class="imgBx">
+                            <img src="img4.jpg" alt="">
+                        </div>
+                        <div class="textBx">
+                            <h3>Projeto 04</h3>
+                        </div>
+                    </div>
+                    <div class="workBx">
+                        <div class="imgBx">
+                            <img src="img5.jpg" alt="">
+                        </div>
+                        <div class="textBx">
+                            <h3>Projeto 05</h3>
+                        </div>
+                    </div>
+                    <div class="workBx">
+                        <div class="imgBx">
+                            <img src="img6.jpg" alt="">
+                        </div>
+                        <div class="textBx">
+                            <h3>Projeto 06</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--Contatos-->
+            <section class="contact adjust" id="contact">
+                <div class="title">
+                    <h2>Diga-me olá</h2>
+                    <p>Envie-me uma mensagem</p>
+                </div>
+                <div class="contactForm" >
+                    <div class="row">
+                        <input type="text" name="" id="" placeholder="Primeiro nome">
+                        <input type="text" name="" id="" placeholder="Ultimo nome">
+                    </div>
+                    <div class="row">
+                        <input type="text" name="" id="" placeholder="Email">
+                        <input type="text" name="" id="" placeholder="Numero de telefone">
+                    </div>
+                    <div class="row2" >
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Mensagem"></textarea>
+                    </div>
+                    <div class="row2">
+                        <input type="submit" value="send">
+                    </div>
+                    
+                </div>
+            </section>
+
+            <!--Copyright-->
+
+            <div class="copyright">
+                <p>Copyright &copy; 2022 Keve Sousa. Todos os direitos reservados.</p>
             </div>
         </div>
     </div>
     
+    <script src="Script.js"></script>
 </body>
 </html>
